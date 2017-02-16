@@ -13,8 +13,13 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     RecyclerView chatRV = (RecyclerView) findViewById(R.id.chat_recycler_view);
+    /**
+     * A custom linear layout manager to handle wrapping of recycler view.
+     * This is done for the recycler-view to not take all the space available in the scroll view
+     * But rather wrap in it.
+     */
     LinearLayoutManager chatLinearLayoutManager =
-        new CustomLinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        new WrappingLinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
     chatRV.setLayoutManager(chatLinearLayoutManager);
 
     ArrayList<Integer> dummyData = new ArrayList<>();

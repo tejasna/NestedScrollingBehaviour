@@ -3,27 +3,17 @@ package com.example.test.nestedscrollingviewbehaviour;
 import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class CustomLinearLayoutManager extends LinearLayoutManager {
+class WrappingLinearLayoutManager extends LinearLayoutManager {
 
-  public CustomLinearLayoutManager(Context context, int orientation, boolean reverseLayout) {
+  WrappingLinearLayoutManager(Context context, int orientation, boolean reverseLayout) {
     super(context, orientation, reverseLayout);
     setAutoMeasureEnabled(false);
   }
 
   private int[] mMeasuredDimension = new int[2];
-
-  public CustomLinearLayoutManager(Context context) {
-    super(context);
-  }
-
-  public CustomLinearLayoutManager(Context context, AttributeSet attrs, int defStyleAttr,
-      int defStyleRes) {
-    super(context, attrs, defStyleAttr, defStyleRes);
-  }
 
   @Override
   public void onMeasure(RecyclerView.Recycler recycler, RecyclerView.State state, int widthSpec,
