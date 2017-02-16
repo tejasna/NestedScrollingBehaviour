@@ -1,4 +1,4 @@
-package com.example.tejas.adjustpantest;
+package com.example.test.nestedscrollingviewbehaviour;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.example.tejas.adjustpantest;
+package com.example.test.nestedscrollingviewbehaviour;
 
 import org.junit.Test;
 
