@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">AdjustPanTest</string>
+  <string name="hint">Type here</string>
+  <string name="data_holder">DATA</string>
+</resources>
